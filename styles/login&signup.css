@@ -15,8 +15,6 @@
 #login_pop>div:nth-child(1) {
     display: flex;
     justify-content: space-between;
-    /* box-shadow: ; */
-
     padding: 3%;
 }
 
@@ -95,4 +93,13 @@
 #back {
     position: fixed;
     scroll-behavior: auto;
+}
+
+#login_logo,
+#signup_logo_container>img{
+    width: 100%;  
+    
+}
+#login_logo_container,#signup_logo_container{
+    width: 20%;
 }

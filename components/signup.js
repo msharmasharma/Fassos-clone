@@ -7,8 +7,8 @@ let signup=()=>{
                 </div>
                 <p class="side_heading" style="margin-top: -5%; font-size: 13px;">Create a account with new phone number</p>
             </div>
-            <div>
-                <h1><i class="fas fa-grin-wink"></i><i class="fas fa-thumbs-up"></i></h1>
+            <div id="signup_logo_container">
+                <img src= "../images/loginLogo.svg" >
             </div>
         </div>
         <div id="signup_details">

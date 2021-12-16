@@ -1,16 +1,15 @@
 let login=()=>{
     return `<div class="top">
-            <div>
-                <div style="display: flex;" id="close_login">
-                    <h2 id="back"><i class="fas fa-chevron-left"></i></h2>
-                    <h2 style="margin: 6%;">Login</h2>
-                </div>                
-                <p class="side_heading" style="margin-top: -5%; font-size: 13px;">Enter your phone number to continue
-                </p>
-            </div>
-            <div>
-                <h1><i class="fas fa-grin-wink"></i><i class="fas fa-thumbs-up"></i></h1>
-            </div>
+                <div>
+                    <div style="display: flex;" id="close_login">
+                        <h2 id="back"><i class="fas fa-chevron-left"></i></h2>
+                        <h2 style="margin: 6%;">Login</h2>
+                    </div>                
+                    <p class="side_heading" style="margin-top: -5%; font-size: 13px;">Enter your phone number to continue</p>
+                </div>
+                <div id="login_logo_container">
+                    <img id=login_logo src="../images/loginLogo.svg">
+                </div>
         </div>
         <br><br><br><br><br>
         <div id="login_details">

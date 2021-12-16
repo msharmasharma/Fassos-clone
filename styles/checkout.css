@@ -55,8 +55,7 @@ body {
     padding: 5%;
 }
 
-#delivery_addAddress button,
-#payment button {
+#delivery_addAddress button{
     background-color: yellow;
     border-radius: 2px;
     border: yellow;
@@ -71,4 +70,14 @@ body {
 
 #order_summary td {
     width: 50%;
+}
+#payment_options{
+    display: flex;
+    background-color: #F3F3F4;
+}
+#payment_options>div{
+    margin-left: 5%;    
+}
+#payment_options>div a{
+    text-decoration: none;    
 }
