@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f6;
+}
+#filter-box {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -100px;
+  margin-left: 250px;
+  width: 82vw;
+  border-bottom: 1px solid #888888;
+
+}
+
+#text {
+  display: flex;
+  height: 70px;
+  width: 700px;
+  font-size: 42px;
+  color: #333333;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  padding: 5px;
+  height: 48px;
+  
+  box-shadow: white;
+  font-size: 22px;
+  border-right: none;
+  border: 1px solid white;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  background-color: white;
+  color: #9DBFAF;
+  box-shadow: 5px 5px #888888;
+}
+
+.searchTerm:focus{
+  color: #ffffff;
+}
+
+.searchButton {
+  width: 50px;
+  height: 60px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  text-align: center;
+  color: #0e0e0e;
+  border-radius: 5px 0px 0px 5px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 5px 5px #888888;
+}
+.wrap{
+  display: flex;
+  margin-top: 5px;
+  width: 20%;
+}
+
+.checkbox {
+  padding: 8px;
+  display: flex;
+  width: 350px;
+  height: 50px;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 5%;
+  box-shadow: 5px 5px #888888;
+}
+
+.checkbox .group {
+  padding-left: 25px;
+  margin: 10px;
+  width: 150px;
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #a1a1a1;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  position: relative;
+}
+
+label::before {
+  content: "";
+  background: url("https://rb.gy/pqjb5e");
+  background-position: center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: -44px;
+  top: -8px;
+
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+input[type="checkbox"]:checked + label::before {
+  transform: scale(1) rotateZ(0deg);
+}
+
+label::after {
+  content: "";
+  border: 2px solid #888888;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -42px;
+  top: -6px;
+}
+ 
+
+.food-filter {
+  margin: 100px 250px;
+  text-align: left;
+
+}
+.food-filter ul {
+  list-style: none;
+  position: fixed;
+  width: 300px;
+  border-radius: 5%;
+  background-color: white;
+  box-shadow: 0 0px 5px 5px #888888;
+}
+.food-filter ul li {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 17px;
+  cursor: pointer;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #74686a;
+  background-color: white;
+}
+
+
+a:hover, a:focus {
+  font-weight: 600;
+  color: black;
+  letter-spacing: 0
+}
+
+
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  height: fit-content;
+  gap: 30px;
+  width: auto;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+
+    </style>
+  </head>
+  <body>
+      
+        <div id="filter-box">
+          <div id="text"><b>Order Food Online in Green Park FC</b></div>
+          <div class="wrap">
+            <div class="search">
+              <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+               <input type="text" class="searchTerm" placeholder="Search for wraps">
+               
+            </div>
+         </div>
+         <div class="checkbox">
+
+          <div class="group">
+            <input type="checkbox" id="xd" />
+            <label for="xd">veg</label>
+          </div>
+    
+          <div class="group">
+            <input type="checkbox" id="figma" />
+            <label for="figma">Non-Veg</label>
+          </div>
+        </div>
+          </div>
+          
+          <div class="food-filter">
+            <ul>
+              <li><a href="#">Fab Wraps starting at 99 each</a></li>
+              <li><a href="#">Faasos Chefs Specials</a> </li>
+              <li><a href="#">Daily value Wrap combos (Save Upto 40% Extra)</a></li>
+              <li><a href="#">Signature Wraps - veg</a></li>
+              <li><a href="#">Signature Wraps - Non -veg</a></li>
+              <li><a href="#">Classic Wraps</a></li>
+              <li><a href="#">Meals Combos (Upto 25% Savings)</a></li>
+              <li><a href="#">Sides And Beverager</a></li>
+              <li><a href="#">Desserts</a></li>
+            </ul>
+          </div>
+         
+        <div id="container"></div>
+     
+
+   
+  </body>
+</html>
+<script>
