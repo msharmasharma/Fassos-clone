@@ -30,51 +30,49 @@ function navbar() {
                 </li>
                 <li>
                     <a href="#">
-                        < span > < img src = "../images/Sidebarmanageorder.png"
-                        alt = "Order" > < /span>
+                        <span> <img src="../images/Sidebarmanageorder.png" alt="Order"> </span>
                         <p>Manage Orders</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        < span > < img src = "../images/sidebaraddress.png"
-                        alt = "Manage Addresses" > < /span>
+                        <span> <img src="../images/sidebaraddress.png" alt="Manage Addresses"></span>
                         <p>Manage Addresses</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        < span > < img src = "../images/sidebarpayment.png"
-                        alt = "Manage Payments" > < /span>
+                        <span> <img src="../images/sidebarpayment.png"
+                        alt="Manage Payments"></span>
                         <p>Manage Payments</p>
                        
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        < span > < img src = "../images/sidebarhelp.PNG"
-                        alt = "Help & Support" > < /span>
+                        <span> <img src="../images/sidebarhelp.PNG"
+                        alt="Help & Support" > </span>
                         <p>Help & Support</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        < span > < img src = "../images/sidebarabout.png"
-                        alt = "About Us" > < /span>
+                        <span> <img src = "../images/sidebarabout.png"
+                        alt="About Us" > </span>
                         <p>About Us</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        < span > < img src = "../images/sidebarparty.png"
-                        alt = "Party Orders" > < /span>
+                        <span> <img src="../images/sidebarparty.png"
+                        alt="Party Orders"></span>
                         <p>Party Orders</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        < span > < img src = "../images/Sidebarlogout.png"
-                        alt = "Logout" > < /span>
+                        <span><img src="../images/sidebarlogout.png"
+                        alt="Logout"> </span>
                         <p>Logout</p>
                     </a>
                 </li>

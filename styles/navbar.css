@@ -1,36 +1,4 @@
-* {
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  padding: 0;
-  font-family: "Mulish", sans-serif;
-}
 
-:root {
-  --bodyBack: white;
-  --yellow: rgb(255, 211, 68);
-  --primaryColorLight: #6a55cc;
-  --primaryColorRegular: #57409a;
-  --primaryColorDark: #190b46;
-  --blackText: #333333;
-  --grayText: #7e7e7e;
-  --whiteLight: #fff;
-  --whiteRegular: #f5f5f5;
-  font-size: 62.5%;
-}
-
-html {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: "Mulish", sans-serif;
-  /* background-color: var(--whiteRegular); */
-  font-size: 1.3rem;
-  color: var(--blackText);
-}
 * {
   margin: 0;
   text-decoration: none;
