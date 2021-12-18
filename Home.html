@@ -9,25 +9,22 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/Home.css">
-        
-        <!-- nav bar -->
-        <link rel="stylesheet" href="./styles/navbar.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script type="module" src="./scripts/navbarScript.js"></script>
+        <link rel="stylesheet" href="./styles/Home.css">        
+        <script type="module" src="./scripts/Home.js"></script>
 
         <!-- footer -->
         <link rel="stylesheet" href="./styles/footeer.css">
         <script type="module" src="./scripts/footer.js"></script>
 
+        <!-- login and signup -->
+        <script src="https://kit.fontawesome.com/5e8eec8caf.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./styles/login&signup.css" />
     </head>
     <body>
-        <div id="navbar-container"></div>
+        
         <div id="popUp"></div>
         <div style="display: none;">
             <div id="openPopUp">
@@ -92,7 +89,9 @@
                 <div id="location">
                     <input type="text" placeholder="Enter your deliery location">
                     <p style="background: white; padding: 20px;"><img style="margin-right: 5px;" class="floatL" src="./images/location.svg"> Locate Me</p>
-                    <p onclick="goToCollection()" style="background: rgb(255, 211, 68); padding: 20px; border-radius: 0px 5px 5px 0px; font-weight: 900;">FIND FOOD</p>
+                    <p onclick="window.location.href='collection.html'"
+                        style="background: rgb(255, 211, 68); padding: 20px; border-radius: 0px 5px 5px 0px; font-weight: 900;">
+                        FIND FOOD</p>
                 </div>
             </div>
             <div class="center1 clear">
@@ -167,8 +166,9 @@
             </div>
         </div>
         <div id="mainFooter"></div>
+        <div id="blur"></div>
+        <div id="login_pop"></div>
+        <div id="signup_pop"></div>
     </body>
 </html>
-<script type="module">
 
-</script>

@@ -78,14 +78,14 @@ let footer=()=>{
             <p id="f52">
               <img
                 id="img1"
-                src="https://cdn-icons-png.flaticon.com/128/49/49354.png"
+                src = "../images/fb.svg"
               />
               <img
                 id="img2"
-        src="https://cdn-icons.flaticon.com/png/128/2168/premium/2168336.png?token=exp=1639721039~hmac=ead6d0779b7fd7f7971a9990f07215c5" />
+        src="../images/twitter.svg" />
               <img
                 id="img3"
-                src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png"
+                src="../images/insta.svg"
               />
             </p>
           </div>

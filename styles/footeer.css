@@ -9,17 +9,19 @@
 
 #f1 {
     margin-left: 13%;
-    margin-top: 4%;
+    margin-top: 1%;
     color: rgb(196, 196, 196);
     font-size: 22px;
+    margin-bottom: 1%;
 }
 
 #f2 {
     display: flex;
     gap: 13%;
     font-size: medium;
-    line-height: 60%;
+    /* line-height: 60%;  */
     color: whitesmoke;
+    margin-top: -10%;
 }
 
 #f21 {

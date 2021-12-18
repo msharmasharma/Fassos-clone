@@ -1,6 +1,6 @@
 import {login, openLogin, closeLogin, login_mobile,isLoggedIn} from "../components/login.js";
-    import {signup, signupOpen, signupClose,checkEmail} from "../components/signup.js";
-    import {addNewAddress, getLocation, close_pop, addAddress,save_address} from "../components/add_new_address.js";
+import {signup, signupOpen, signupClose,checkEmail} from "../components/signup.js";
+import {addNewAddress, getLocation, close_pop, addAddress,save_address} from "../components/add_new_address.js";
 
 document.getElementById("login_pop").innerHTML=login();
 document.getElementById("signup_pop").innerHTML=signup();
