@@ -20,4 +20,10 @@ document.getElementById("close_login").addEventListener("click",closeLogin);
 //signup
 document.getElementById("signup").addEventListener("click",signupOpen);
 document.getElementById("close_signup").addEventListener("click",signupClose);
-document.querySelectorAll("#signup_details input")[2].addEventListener("input",checkEmail);  
+document.querySelectorAll("#signup_details input")[2].addEventListener("input",checkEmail);
+
+//payment
+document.querySelector("#payment_choose>button").addEventListener("click",()=>{
+    document.getElementById("payment_options").style.display="flex";
+    document.querySelector("#payment_choose").style.display="none";
+})

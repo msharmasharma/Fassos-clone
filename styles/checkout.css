@@ -55,12 +55,13 @@ body {
     padding: 5%;
 }
 
-#delivery_addAddress button{
+#delivery_addAddress button,#payment_choose>button{
     background-color: yellow;
     border-radius: 2px;
     border: yellow;
     padding: 2%;
     margin-left: 2%;
+    font-weight: 800;
 }
 
 #order_summary {
@@ -68,11 +69,12 @@ body {
     background-color: white;
 }
 
-#order_summary td {
-    width: 50%;
+#order_summary td {    
+    width: 70%;
+    
 }
 #payment_options{
-    display: flex;
+    display: none;
     background-color: #F3F3F4;
 }
 #payment_options>div{
