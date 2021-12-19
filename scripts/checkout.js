@@ -1,6 +1,24 @@
-import {login, openLogin, closeLogin, login_mobile,isLoggedIn} from "../components/login.js";
+import {login, openLogin, closeLogin,isLoggedIn} from "../components/login.js";
 import {signup, signupOpen, signupClose,checkEmail} from "../components/signup.js";
 import {addNewAddress, getLocation, close_pop, addAddress,save_address} from "../components/add_new_address.js";
+
+let login_mobile = () => {
+    let number = document.querySelector("#login_details input").value;
+
+    if (number.length > 9) {
+        document.querySelectorAll("#login_details p")[1].style.display = "none";
+        document.getElementById("login_submit").style.color = "#000000";
+        document.querySelector("#login_details button").style.backgroundColor = "yellow";
+        document.querySelector("#login_details button").addEventListener("click", () => {
+            isLoggedIn(document.querySelector("#login_details input").value);
+            document.getElementById("login_pop").style.display = "none";
+            document.getElementById("blur").style.display = "none";
+        })
+
+    } else {
+        document.querySelectorAll("#login_details p")[1].style.display = "block";
+    }
+}
 
 document.getElementById("login_pop").innerHTML=login();
 document.getElementById("signup_pop").innerHTML=signup();

@@ -9,8 +9,8 @@ let addToCart = (data) => {
 }
 
 let display_fasoos = () => {
-    let data = JSON.parse(localStorage.getItem("fasoos_new"));
-    document.querySelectorAll("#top>span")[2].innerText = data.name
+    let data = JSON.parse(localStorage.getItem("fasoos_new"));    
+    document.querySelectorAll("#food_name").innerText = data.name
     document.querySelector("#img img").setAttribute("src", data.img);
     document.getElementById("f1").innerText = data.name;
     if (data.cat == "nonveg")
@@ -25,4 +25,5 @@ let display_fasoos = () => {
         addToCart(data);
     })
 }
+console.log(document.querySelectorAll("#top>span")[2])
 display_fasoos();

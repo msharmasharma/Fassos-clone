@@ -45,6 +45,27 @@ let signupClose=()=>{
      document.getElementById("blur").style.display = "none";
 }
 
+let isLoggedIn = (mobile = null) => {
+    let user = JSON.parse(localStorage.getItem("user_fasoos")) || [];
+    let flag = null;
+    for (let i = 0; i < user.length; i++) {
+        if (user[i].phone.includes(mobile)) {
+            user[i].logedin = true;
+            flag = i
+        }
+        user[i].logedin = false;
+    }
+    if (flag != null) {
+        document.getElementById("account_notLogin").style.display = "none";
+        document.getElementById("account_LoggedIn").style.display = "block";
+        document.getElementById("name_when_logeedIn").innerText = user[flag].name;
+        document.getElementById("mobile_when_logeedIn").innerText = user[flag].phone;
+    } else {
+        alert("user signed up");
+    }
+}
+
+
 let storeUser=(e)=>{
     e.preventDefault();
     console.log("here");

@@ -63,7 +63,7 @@ let login_mobile=()=>{
         document.getElementById("login_submit").style.color = "#000000";
         document.querySelector("#login_details button").style.backgroundColor = "yellow";
         document.querySelector("#login_details button").addEventListener("click", () => {
-            isLoggedIn(document.querySelector("#login_details input").value);
+            // isLoggedIn(document.querySelector("#login_details input").value);
             document.getElementById("login_pop").style.display = "none";
             document.getElementById("blur").style.display = "none";
         })

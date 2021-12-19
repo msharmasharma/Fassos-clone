@@ -9,7 +9,7 @@ document.getElementById("signup_pop").innerHTML = signup();
 document.querySelector("#login_details input").addEventListener("input", login_mobile)
 document.getElementById("login").addEventListener("click", openLogin);
 
-document.getElementById("back").addEventListener("click", close_pop);
+document.getElementById("back").addEventListener("click", closeLogin);
 document.getElementById("close_login").addEventListener("click", closeLogin);
 
 //signup
