@@ -13,7 +13,7 @@ let inc = (index, str) => {
     console.log(str);
     let flag = false;
     if (str == "+") {
-        cart[index].count = cart[index].count + 1;
+        cart[index].count = +(cart[index].count) + 1;
         console.log(cart[index].count);
     } else {
         cart[index].count = cart[index].count - 1;

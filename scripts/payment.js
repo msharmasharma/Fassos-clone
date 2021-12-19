@@ -15,6 +15,7 @@ button.addEventListener("click", ()=>{
     } else {
         alert("Payment Successfull");        
         alert("Thanks for order");
+        localStorage.removeItem("cartItems");
         window.location.href = "collection.html";
     }
 });
