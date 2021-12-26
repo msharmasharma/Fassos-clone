@@ -61,7 +61,7 @@ let orderSummary = () => {
             inc(index, "+");
         });
         let minus = document.createElement("button");
-        el["count"] = 1;
+        el["count"] = el.count || 1;
         minus.textContent = "-";
         minus.addEventListener("click", () => {
             inc(index, "-");
