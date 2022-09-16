@@ -21,7 +21,7 @@ Faasos is an Indian "food on demand" service that was incorporated in 2004. It i
     - Landing Page
     - Collections Page
     - Product Page
-    - Checkiut Page
+    - Checkout Page
     - Profile Page
 
 - Functionalities
