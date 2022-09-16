@@ -2,7 +2,7 @@
 # faasosClone
 See Project :- https://faasos-masai-clone.herokuapp.com/
 
-Faasos is an Indian "food on demand" service app
+Faasos is an Indian "food on demand" service that was incorporated in 2004. It is one of the brands owned by the online restaurant company, Rebel Foods.
 
 ![Logo](https://thegrapevine.co.in/images/clients/faasos.png)
 
