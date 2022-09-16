@@ -1,6 +1,6 @@
 
 # faasosClone
-masai construct week Unit 3
+See Project :- https://faasos-masai-clone.herokuapp.com/
 
 # Technologies Used
 * HTML and CSS
